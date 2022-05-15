@@ -10,36 +10,31 @@
     <div class="container">
       <div class="title-search-bar">
         <h1>Giphy API Example</h1>
-        <div id="buttons">
-          <input type="button" class="bttn" id="search-bttn" value="Internet cats" />
-          <input type="button" class="bttn"  id="search-bttn"value="Meme's" />
-          <input type="button" class="bttn"  id="search-bttn"value="Typing" />
-          <input type="button" class="bttn"  id="search-bttn"value="Space" />
-          <input type="button" class="bttn"  id="search-bttn" value="Rick and Morty" />
+        <div class="buttons" id="buttons">
+          <input type="button" class="bttn button" id="search-bttn" value="Internet cats" />
+          <input type="button" class="bttn button" id="search-bttn" value="Meme's" />
+          <input type="button" class="bttn button" id="search-bttn" value="Typing" />
+          <input type="button" class="bttn button" id="search-bttn" value="Space" />
+          <input type="button" class="bttn button" id="search-bttn" value="Rick and Morty" />
         </div>
         <div class="search-bar">
           <input type="text" name="query" id="user-search" />
-          <input id="submit" type="button"  class="bttn" value="Submit"/>
+          <input id="submit" type="button" class="bttn" value="Submit" />
           <input id="trending" type="button" value="See what's trending" class="bttn" />
         </div>
       </div>
     </div>
   </section>
   <section class="gif-section">
-    <div class="conteiner"> 
-     <div class="gif-box-container" id="gif-box-container">
-       <div class="gif-box">
-         <img src="https://media0.giphy.com/media/MlAhxJ8euL2X2nSKsK/200.gif">
-        <h6>Rating: g
-        </h6>
-       </div>
-     </div>
+    <div class="conteiner">
+      <div class="gif-boxes" id="gif-boxes">
+      </div>
     </div>
   </section>
-  
+
 
 </body>
 
-<script src="./scripts.js"></script>
+<script type="module" src="./scripts.js"></script>
 
 </html>
