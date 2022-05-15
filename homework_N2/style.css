@@ -20,7 +20,7 @@ margin: 2px;
 .button:active, .button:focus 
  {
      border: 3px solid rgb(134, 154, 238);  /* here configure as your needs */
-     margin: -2px;
+     padding: -2px;
   }
 .search-bar {
     margin-top: 0.4rem;
@@ -63,7 +63,7 @@ h1 {
 #trending:active, #trending:focus 
  {
      border: 3px solid rgb(223, 130, 114);  /* here configure as your needs */
-     margin: 0px;
+     padding: -1.5px;
   }
   #trending:hover {
     background-color: #c51224;
@@ -79,7 +79,7 @@ h1 {
 #submit:active, #submit:focus 
  {
      border: 3px solid rgb(123, 226, 109);  /* here configure as your needs */
-     margin: 0px;
+     padding: -1.5px;
   }
 
 .gif-section {
