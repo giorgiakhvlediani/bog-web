@@ -1,4 +1,4 @@
-import { searchButtonSection } from "./common/searchButtonSection.js";
+import { buttonSection } from "./common/buttonSection.js";
 import { buttonsData } from "./buttons/buttonsData.js";
 import { gifsSection } from "./common/gifsSection.js"
 import { config } from "./config/config.js"
@@ -6,22 +6,29 @@ import { config } from "./config/config.js"
 let submitButton = document.getElementById("submit");
 let buttonsList = document.getElementsByClassName("button");
 console.log(buttonsList, "ka");
+addingButtons(buttonsData);
 clickingButton(buttonsList);
+
 
 submitButton.addEventListener('click', (event) => {
   let searchValue = document.getElementById("user-search").value;
   if (searchValue !== "") {
     buttonsData.push(searchValue);
-    let id = document.getElementById('buttons');
-    let searchBlock = new searchButtonSection(id);
-    searchBlock.setButtonList = buttonsData;
-    searchBlock.render()
+    addingButtons(buttonsData);
     buttonsList = document.getElementsByClassName("button");
     let searchedGif = searchValue;
     searchingUrl(searchedGif);
   }
   clickingButton(buttonsList);
 })
+
+function addingButtons(buttonsData) {
+  let id = document.getElementById('buttons');
+    let searchBlock = new buttonSection(id);
+    searchBlock.setButtonList = buttonsData;
+    console.log(buttonsData);
+    searchBlock.render()
+}
 
 let trendingButton = document.getElementById("trending");
 

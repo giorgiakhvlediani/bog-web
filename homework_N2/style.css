@@ -7,21 +7,24 @@
 }
 
 
-.title-search-bar {
+ .title-search-bar {
     text-align: center;
 }
 .search-seaction {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-#search-bttn {
-margin: 2px;
-}
 
 .button:active, .button:focus 
  {
-     border: 3px solid rgb(134, 154, 238);  /* here configure as your needs */
-     padding: -2px;
+     border: 3px solid rgb(101, 131, 202); 
+     margin: -1.5px !important;
   }
+
+#search-bttn {
+    margin: 1px;
+}
+
+
 .search-bar {
     margin-top: 0.4rem;
     margin-bottom: 1rem;
@@ -35,7 +38,7 @@ margin: 2px;
      padding: 0.25rem 0.5rem;
      font-size: 0.875rem;
      line-height: 1.5;
-     border-radius: 0.2rem; 
+     border-radius: 0.3rem; 
 } 
 
 h1 {
@@ -62,12 +65,20 @@ h1 {
 
 #trending:active, #trending:focus 
  {
-     border: 3px solid rgb(223, 130, 114);  /* here configure as your needs */
-     padding: -1.5px;
+     border: 3px solid rgb(223, 130, 114);  
+     margin: -2px;
+     margin-top: -8px;
   }
   #trending:hover {
     background-color: #c51224;
 }
+
+#submit:active, #submit:focus 
+ {
+     border: 3px solid rgb(123, 226, 109);  
+     margin: -2px ;
+     margin-top: -8px ; 
+  }
 #submit {
     color: #fff;
     background-color: #28a745;;
@@ -76,11 +87,7 @@ h1 {
 #submit:hover {
     background-color: #16812f;
 }
-#submit:active, #submit:focus 
- {
-     border: 3px solid rgb(123, 226, 109);  /* here configure as your needs */
-     padding: -1.5px;
-  }
+
 
 .gif-section {
     margin: 0 auto;
@@ -106,4 +113,4 @@ h6 {
     margin-top: -0.2rem;
     margin-bottom: 0.5rem;
     line-height: 1.2;
-}
+} 
