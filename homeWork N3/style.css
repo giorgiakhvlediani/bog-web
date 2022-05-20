@@ -17,21 +17,19 @@
   height:600px;
   background-color: rgb(92, 5, 185);
   justify-content: center;
-  border: 5px solid black;
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: relative;
  }
  .bttn {
-    position: absolute;
     left: 0;
     top: 0;
-    width: 50px;
+    width: 70px;
     height: 30px;
     background-color: rgb(15, 167, 255);
-    color: aliceblue;
  }
+ 
 
  .square{
    width: 30px;
@@ -41,14 +39,27 @@
    border:1px solid black ;
    border-radius: 10px;
  }
+ .atributes {
+    position: absolute;
+    display: flex;
+    float: left;
+    justify-content: left;
+ }
  .head {
-   width: 30px;
-   height: 30px;
    background-color: rgb(22, 95, 163);
-   position: absolute;
    border:1px solid rgb(68, 25, 25) ;
    border-radius: 12px;  
  }
+ .score {
+    width: 30px;
+    height: 30px;
+    float: right;
+    font-size: 20px ;
+    color: green;
+    background-color: red;
+    text-align: center;
+    border-radius: 10px 10px 15px 15px;
+}
  .apple {
     position: absolute;
     background-color: red;
